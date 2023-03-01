@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/mytheme.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+
+					<section>
+						<style>
+							.h1 {
+								font-family: Ceviche One,cursive !important;
+								font-weight: 600 !important;
+								font-size: 120px !important;
+								color: #7e6dd1 !important;
+								letter-spacing: 0 !important;
+							}
+							.rsg_logo {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								gap: 20px;
+							}
+						</style>
+						<div class="rsg_logo">
+							<img src="https://rsgames.online/images/joystick.png" alt="logo" width="200px" height="200px">
+							<h1 class="h1">Gaming Zone</h1>
+						</div>
+						<aside class="notes">
+							<ul>
+								<li>Вводное слово</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h3>Что такое Gaming Zone?</h3>
+						<p>Все просто - это приложения с простыми играми</p>
+						<img src="img/games.png" alt="games">
+						<aside class="notes">
+							<ul>
+								<li>Это приложение с играми</li>
+								<li>Мы реализовали только 3 игры, в планах будет больше</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h3>Что есть в нашем проекте:</h3>
+						<ol>
+							<li>Регистрация, вторизация...</li>
+							<li>3 реализованные игры</li>
+							<li>Уровни доступа</li>
+							<li>Свой собственный<ul><li>домен,</li><li>хостинг</li><li>smtp-сервер (email)</li></ul></li>
+						</ol>
+						<aside class="notes">
+							<ul>
+								<li>Регистрация, авторизация, смена пароля</li>
+								<li>3 игры, одна из них мультиплеер, 1 в планах</li>
+								<li>Администратор, модератор, пользователь - может менять админ</li>
+								<li>бан - запрещает пользователю играть - может банить модератор</li>
+								<li>Свое доменно имя, сбросс пароля по email</li>
+							</ul>
+						</aside>
+					</section>
+					
+				</section>
+
+
+				<section>
+					<section data-transition="fade-in fade-out">
+						<h2>Страницы проекта</h2>
+						<aside class="notes">
+							<ul>
+								<li>Давайте посмотрим подробнее на окна приложения</li>
+								<li><strong>Next: Оля</strong></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Регистрация</h4>
+						<video data-autoplay src="video/01 Регистрация.mp4" loop="loop"></video>
+						<aside class="notes">
+							Для регистрации необходимо ввести
+							<ul>
+								<li>Имя пользователя</li>
+								<li>E-mail</li>
+								<li>Пароль</li>
+								<li>Авто-вход после регистации</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Выход</h4>
+						<video data-autoplay src="video/02 Выход.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Для выхода просто нужно нажать на кнопку  Logout</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Авторизация</h4>
+						<video data-autoplay src="video/03 Вход.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Авторизация происходит по логину и паролю</li>
+								<li>После авторизации в coocie сохраняется JWT токен</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Сброс пароля</h4>
+						<video data-autoplay src="video/04 Сброс пароля.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Нажать Forgot password</li>
+								<li>Ввести имя пользователя или email</li>
+								<li>На почту придет письмо со ссылкой</li>
+								<li>Перейти -> вести новый пароль</li>
+								<li>Письмо с новым, введенным паролем</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Изменение пароля</h4>
+						<video data-autoplay src="video/05 Изменить пароль.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>также можно изменить пароль в кабинете пользователя</li>
+								<li>введя старый и новый пароли</li>
+								<li><strong>Next: Max</strong></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Изменение языка и темы</h4>
+						<video data-autoplay src="video/06 Язык и тема.mp4" loop="loop"></video>
+						<aside class="notes">
+							В приложении, в любой момент можно изменить
+							<ul>
+								<li>Язык (рус/англ)</li>
+								<li>Тему (светлая/темная)</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Игры</h4>
+						<video data-autoplay src="video/07 Игры.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Основной экран приложения</li>
+								<li>Доступно 3 игры</li>
+								<li>Игры в разработки - серым</li>
+								<li>Карточки имеют название и рейтинг</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Экран игры</h4>
+						<video data-autoplay src="video/08 Превью игры.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Каждая игра имеет свой экран</li>
+								<li>Название</li>
+								<li>Описание</li>
+								<li>Рейтинг</li>
+								<li>Правила</li>
+								<li>Топ-10 победителей</li>
+								<li>Отзывы</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Оставить отзыв</h4>
+						<video data-autoplay src="video/09 Оставить Отзыв.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Поставить отценку</li>
+								<li>Оставить отзыв</li>
+								<li>Отзыв отобразится</li>
+								<li>Учитывается при расчете общего рейтинга игры</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Игра: Memory Game</h4>
+						<video data-autoplay src="video/10 Memory Game.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>В игре реализованно 3 уровня</li>
+								<li>Нужно запоминать и угадывать положение карточек</li>
+								<li>В конце результат</li>
+								<li>Записывается в таблицу рекордов</li>
+								<li><strong>Next: Оля</strong></li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Игра: Tetris</h4>
+						<video data-autoplay src="video/12 Tetris.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Механика игры</li>
+								<li>Управление с клавиатуры</li>
+								<li>За каждую линию - 15 очков</li>
+								<li>В конце игры сообщение с кол-вом очков</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Игра: Tetris</h4>
+						<video data-autoplay src="video/13 Tetris mobile.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>мобильная версия</li>
+								<li>уплавление с помощью мыши или сенсорного экрана по нужной области</li>
+								<li>облости подсвечиваются в начале игры</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Игра: Sea Battle</h4>
+						<video data-autoplay src="video/11 Sea Battle.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Мультиплеер</li>
+								<li>Создается игра</li>
+								<li>Размещаеются корабли</li>
+								<li>Игру можно начать, после подтверждения 2-м игроком</li>
+								<li>При переподключении - положения кораблей сохраняются</li>
+								<li><strong>Next: Alexey</strong>></li>
+								<li>Игра работает через web socket</li>
+								<li>Реализованная мобильная версия:</li>
+								<li> - мой выстрел - поле противнка</li>
+								<li> - выстрел противника - мое поле</li>
+								<li>В конце игры выдается сообщение о победе или поражении</li>
+								<li>Проверка размещения кораблей</li>
+								<li>Защита от читерства</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-transition="fade-in fade-out">
+						<h4>Профиль администратора</h4>
+						<video data-autoplay src="video/14 Админка.mp4" loop="loop"></video>
+						<aside class="notes">
+							<ul>
+								<li>Профиль пользователя выглядит иначе</li>
+								<li>Втроенный пользователь, защищен</li>
+								<li>Функция поиска поиска пользователей</li>
+								<li>Изменять права</li>
+								<li>У модераторов есть функция бана</li>
+								<li>Здесть отображаются рекорды пользователя</li>
+								<li>Администратор может удалить пользователя, это дейстие необратимо</li>
+								<li><strong>Next: Max</strong></li>
+							</ul>
+						</aside>
+					</section>
+
+				</section>
+
+
+				<section>
+
+					<section>
+						<h3>RACI матрица</h3>
+						<img alt="RACI-matrix" src="img/RACI.png" height="700px">
+						<aside class="notes">
+							<ul>
+								<li>Распределение задач по неделям</li>
+								<li>И - исполнитель</li>
+								<li>Пр - проверяющий</li>
+								<li>П - помошник</li>
+								<li>I - информирован</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h3>Kanban Board</h3>
+						<img alt="Kanban" src="img/trello.png" height="700px">
+						<aside class="notes">
+							<ul>
+								<li>Это последний день до сабмита</li>
+								<li>Важность по цветам</li>
+								<li>Остались задачи на будущее развитие приложение</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h3>Git flow</h3>
+						<img alt="Git flow" src="img/git flow.svg" height="700px">
+						<aside class="notes">
+							<ul>
+								<li>Git flow</li>
+								<li>Другой способ проверки</li>
+								<li>Pull request</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h3>Pull Request</h3>
+						<img alt="Pull Request" src="img/PR.png" height="700px">
+						<aside class="notes">
+							<ul>
+								<li>Pull request пример</li>
+								<li>Коммиты согласно гайдлайну</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<style>
+							h3 {
+								margin-bottom: 80px !important;
+								font-size: 1.7em !important;
+							}
+							p {
+								font-size: 1.1em !important;
+								margin-bottom: 20px !important;
+								font-weight: 900;
+							}
+							ul {
+								margin-bottom: 40px !important;
+							}
+						</style>
+						<h3>Maxim Loginovsky</h3>
+						<p>Что интересного нашел в проекте:</p>
+						<ul>
+							<li>Реализация морского боя</li>
+							<li>Работа с WebSocket</li>
+						</ul>
+						<p>С какими сложностями столкнулся</p>
+						<ul>
+							<li>Работа с WebSocket</li>
+							<li>Merge конфликты</li>
+						</ul>
+						<aside class="notes">
+							<h4>Что интересного нашел в проекте:</h4>
+							<ul>
+								<li>Реализация морского боя</li>
+								<li>Работа с WebSocket</li>
+							</ul>
+							<h4>С какими сложностями столкнулся</h4>
+							<ul>
+								<li>Работа с WebSocket</li>
+								<li>Merge конфликты</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h3>Olya Kunitsa</h3>
+						<h4>Что интересного нашла в проекте:</h4>
+						<ul>
+							<li>Тетрис</li>
+							<li></li>
+						</ul>
+						<h4>С какими сложностями столкнулась</h4>
+						<ul>
+							<li></li>
+							<li></li>
+						</ul>
+						<aside class="notes">
+							<h4>Что интересного нашел в проекте:</h4>
+							<ul>
+								<li>Реализация морского боя</li>
+								<li>Работа с WebSocket</li>
+							</ul>
+							<h4>С какими сложностями столкнулся</h4>
+							<ul>
+								<li>Работа с WebSocket</li>
+								<li>Merge конфликты</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section>
+						<h3>Alexey Kuptsov</h3>
+						<h4>Что интересного нашел в проекте:</h4>
+						<ul>
+							<li>VPS, CI/CD, DNS, email, SSL</li>
+							<li>NodeJS</li>
+							<li>WebSocket</li>
+						</ul>
+						<h4>С какими сложностями столкнулся</h4>
+						<ul>
+							<li>Linux</li>
+							<li>Экспресс изучение express</li>
+							<li>E-mail с собственным доменом</li>
+						</ul>
+						<aside class="notes">
+							<h4>Что нового и интересного нашел в проекте:</h4>
+							<ul>
+								<li>VPS, CI/CD, DNS, email, SSL</li>
+								<li>NodeJS</li>
+								<li>WebSocket</li>
+							</ul>
+							<h4>С какими сложностями столкнулся</h4>
+							<ul>
+								<li>Linux, терминал, права доступа, слабая машина</li>
+								<li>Экспресс изучение express</li>
+								<li>E-mail с собственным доменом, спам, inline-стили</li>
+							</ul>
+						</aside>
+					</section>
+
+				</section>
+
+				<section>
+					<style>
+						.h1 {
+							font-family: Ceviche One,cursive !important;
+							font-weight: 600 !important;
+							font-size: 80px !important;
+							color: #7e6dd1 !important;
+							letter-spacing: 0 !important;
+						}
+						h3 {
+							margin-top: 80px !important;
+						}
+						.rsg_logo {
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							gap: 16px;
+						}
+					</style>
+					<div class="rsg_logo">
+						<img src="https://rsgames.online/images/joystick.png" alt="logo" width="130px" height="130px">
+						<h1 class="h1">Gaming Zone</h1>
+					</div>
+					<h3>Спасибо за внимание!</h3>
+					<h5>Готовы ответить на ваши вопросы.</h5>
+					<aside class="notes">
+						<ul>
+							<li>Заканчиваем</li>
+						</ul>
+					</aside>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
